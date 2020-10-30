@@ -57,6 +57,7 @@ public class Main {
         */
         System.out.println("Type an item you want to search in the merged list.");
         Scanner sc = new Scanner(System.in);
+        
         for (int i = 0; i< mergedList.size(); i++) {
             String spcItem = sc.nextLine();
             if (!mergedList.get(i).equals(spcItem)) {
