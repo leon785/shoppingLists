@@ -43,8 +43,8 @@ public class Main {
         /*
         4. Print out the contents of the merged list using the method in question 1 
         */
-        System.out.println("Merged list:" + mergedList);
-        
+        System.out.println("Merged list:");
+        getLists.printList(mergedList);
         /*
         5.Write a method to add a new item to the mergedList 
         */
@@ -55,11 +55,11 @@ public class Main {
         item in the mergedList ArrayList if the item is found return the index 
         of the item. If the item is not found return -1 
         */
+        System.out.println("Type an item you want to search in the merged list.");
+        Scanner sc = new Scanner(System.in);
         for (int i = 0; i< mergedList.size(); i++) {
-            System.out.println("Type an item you want to search in the merged list.");
-            Scanner sc = new Scanner(System.in);
             String spcItem = sc.nextLine();
-            if (mergedList.get(i).equals(spcItem)) {
+            if (!mergedList.get(i).equals(spcItem)) {
                 System.out.println(spcItem + " has found");
             }else{
                 System.out.println("-1");
