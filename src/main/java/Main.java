@@ -21,20 +21,21 @@ public class Main {
         
         //As this method returns an ArrayList we don't need to use new here
         ArrayList<String> list1  = getLists.getList(MAXLIST);  
-        
         /*
         1. Create a method to print out the contents of an ArrayList using an 
         ArrayList as the parameter for the method use the method in the Main 
         class to print out the contents of list1 
         */
-        System.out.println("List1:" + list1);
+        System.out.println("List1:");
+        getLists.printList(list1);
         
         ArrayList<String> list2 = getLists.getList(MAXLIST);
         /*
         2. Use the same method in the main class to print out the contents of 
         list2 
         */
-        System.out.println("List2:" + list2);
+        System.out.println("List2:");
+        getLists.printList(list2);
         /*
         3. Complete the method mergeLists in the class ListHandling 
         */
@@ -42,7 +43,8 @@ public class Main {
         /*
         4. Print out the contents of the merged list using the method in question 1 
         */
-        System.out.println("Merged List:" + mergedList);
+        System.out.println("Merged list:" + mergedList);
+        
         /*
         5.Write a method to add a new item to the mergedList 
         */
