@@ -69,8 +69,9 @@ public class ListHandling {
         mergedList = new ArrayList<>();
         ArrayList<String> tentativeList = new ArrayList<>();
         
+        
         //Use for loop to put items in list1 and list2 into a tentative list
-        for (int i = 0; i < mergedList.size(); i++ ) {
+        for (int i = 0; i < 10; i++ ) {
             tentativeList.add(list1.get(i));
             tentativeList.add(list2.get(i));  
         }
