@@ -50,6 +50,10 @@ public class ListHandling {
         }
         return shoppingList;
     }
+    public void printList(ArrayList<String> list) {
+        for (String i: list)
+            System.out.println(i);
+    }
     
     /**
      * Write the code to merge the two lists together to make a new list with one 
@@ -59,13 +63,14 @@ public class ListHandling {
      * @param list2 list to merge 
      * @return ArrayList of mergedList
     */
+    
     public ArrayList<String> mergedLists(ArrayList<String> list1, ArrayList<String> list2) {
         ArrayList<String> mergedList;  
         mergedList = new ArrayList<>();
         ArrayList<String> tentativeList = new ArrayList<>();
         
         //Use for loop to put items in list1 and list2 into a tentative list
-        for (int i = 0; i < 10; i++ ) {
+        for (int i = 0; i < mergedList.size(); i++ ) {
             tentativeList.add(list1.get(i));
             tentativeList.add(list2.get(i));  
         }
@@ -78,6 +83,7 @@ public class ListHandling {
         }
         return mergedList;
     }
+    
     public ArrayList<String> addItem(ArrayList<String> addedList) {
         System.out.println("Add a new item to merged list.");
         Scanner intoNewItem = new Scanner(System.in);
